@@ -1194,7 +1194,7 @@ const MASTER_OF_FORUMS = () => {
 
           const OK = () => {
             // MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #c60;">正在请求云端支持</span>\u{2728}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
-            MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #c60;">点赞功能即将上线</span>\u{2728}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
+            MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #c60;">云端顶帖功能即将上线，敬请期待！</span>\u{2728}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
             // MAIN.actions?.thumbs(POST_ID);
           };
           if (content.includes('\u{6295}\u{7968}\u{6210}\u{529F}') || content.includes('>postreviewupdate(')) {
