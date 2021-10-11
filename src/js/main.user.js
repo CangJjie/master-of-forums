@@ -350,16 +350,19 @@
 const MASTER_OF_FORUMS = () => {
   // Global Configurations
   const MAIN = {
-    data: {
-      patch: 'https://cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.gif',
-      timestamp: Date.now(),
-      unix_timestamp: Math.floor(Date.now() / 1000),
-    },
+    actions: {},
+    can: {},
+    channel: 'GitHub',
     check_boxes: {
       create_a_back_to_top: GM_getValue('create_a_back_to_top', true),
       show_user_badge: GM_getValue('show_user_badge', true),
       show_user_avatar: GM_getValue('show_user_avatar', true),
       show_user_signature: GM_getValue('show_user_signature', true),
+    },
+    data: {
+      patch: 'https://cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.gif',
+      nodeTimestamp: Date.now(),
+      unixTimestamp: Math.floor(Date.now() / 1000),
     },
     fn: {
       print(...args) {
@@ -367,11 +370,9 @@ const MASTER_OF_FORUMS = () => {
         console.log((Date.now() / 1000).toFixed(3), ...args);
       },
     },
-    actions: {},
-    can: {},
-    tips: {},
     repository: 'https://github.com/master-of-forums/master-of-forums',
-    channel: 'GitHub',
+    tips: {},
+    version: 20210101,
     window: {},
   };
 
@@ -1262,7 +1263,7 @@ const MASTER_OF_FORUMS = () => {
           post: POST_ID,
           thread: MAIN.data?.thread,
           uuid: GM_info.uuid || GM_info.script?.uuid || '',
-          version: GM_info.script?.version,
+          version: MAIN.version,
         },
         user: {
           // eslint-disable-next-line camelcase, no-undef
