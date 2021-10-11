@@ -232,6 +232,7 @@ img[file$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images
 img[src$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.gif"]:hover,
 img[src$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.svg"]:hover,
 img.master-badge:hover {
+  filter: drop-shadow(0 0 2px #fff);
   box-shadow: none;
   opacity: 1;
 }
@@ -240,17 +241,14 @@ img.master-badge:hover {
 @keyframes reappear {
   from {
     opacity: 1;
-    transform: scale3d(1, 1, 1);
   }
 
-  80% {
+  20% {
     opacity: 0;
-    transform: scale3d(0.1, 0.1, 0.1);
   }
 
   to {
     opacity: 1;
-    transform: scale3d(1, 1, 1);
   }
 }
 
