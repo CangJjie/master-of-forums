@@ -240,18 +240,12 @@ img.master-badge:hover {
 @keyframes reappear {
   from {
     opacity: 1;
-  }
-
-  49% {
-    transform: scale3d(2, 2, 2);
+    transform: none;
   }
 
   50% {
     opacity: 0;
-  }
-
-  51% {
-    transform: scale3d(0, 0, 0);
+    transform: scale3d(0.1, 0.1, 0.1);
   }
 
   to {
