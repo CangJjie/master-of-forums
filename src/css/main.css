@@ -243,14 +243,9 @@ img.master-badge:hover {
     transform: scale3d(1, 1, 1);
   }
 
-  49% {
+  80% {
     opacity: 0;
-    transform: scale3d(0, 0, 0);
-  }
-
-  51% {
-    opacity: 0;
-    transform: scale3d(2, 2, 2);
+    transform: scale3d(0.1, 0.1, 0.1);
   }
 
   to {
