@@ -355,8 +355,8 @@ const MASTER_OF_FORUMS = () => {
     channel: 'GitHub',
     check_boxes: {
       create_a_back_to_top: GM_getValue('create_a_back_to_top', true),
-      show_user_badge: GM_getValue('show_user_badge', true),
       show_user_avatar: GM_getValue('show_user_avatar', true),
+      show_user_badge: GM_getValue('show_user_badge', true),
       show_user_signature: GM_getValue('show_user_signature', true),
     },
     data: {
@@ -583,15 +583,6 @@ const MASTER_OF_FORUMS = () => {
     window.location.reload();
   });
 
-  // Check Mark - Show user badge
-  MONKEY_MENU.name = `\u{1F520} Option No.0 ${MAIN.check_boxes.show_user_badge ? '\u{2705}' : '\u{1F532}'} \u{663E}\u{793A} \u{7528}\u{6237}\u{5FBD}\u{7AE0}`;
-  GM_registerMenuCommand(MONKEY_MENU.name, () => {
-    GM_setValue('show_user_badge', !MAIN.check_boxes.show_user_badge);
-    document.body.style.transition = 'opacity 1s ease-out';
-    document.body.style.opacity = 0;
-    window.location.reload();
-  });
-
   // Check Mark - Show user avatar
   MONKEY_MENU.name = `\u{1F520} Option No.1 ${MAIN.check_boxes.show_user_avatar ? '\u{2705}' : '\u{1F532}'} \u{663E}\u{793A} \u{7528}\u{6237}\u{5934}\u{50CF}`;
   GM_registerMenuCommand(MONKEY_MENU.name, () => {
@@ -601,8 +592,17 @@ const MASTER_OF_FORUMS = () => {
     window.location.reload();
   });
 
+  // Check Mark - Show user badge
+  MONKEY_MENU.name = `\u{1F520} Option No.2 ${MAIN.check_boxes.show_user_badge ? '\u{2705}' : '\u{1F532}'} \u{663E}\u{793A} \u{7528}\u{6237}\u{5FBD}\u{7AE0}`;
+  GM_registerMenuCommand(MONKEY_MENU.name, () => {
+    GM_setValue('show_user_badge', !MAIN.check_boxes.show_user_badge);
+    document.body.style.transition = 'opacity 1s ease-out';
+    document.body.style.opacity = 0;
+    window.location.reload();
+  });
+
   // Check Mark - Show user signature
-  MONKEY_MENU.name = `\u{1F520} Option No.2 ${MAIN.check_boxes.show_user_signature ? '\u{2705}' : '\u{1F532}'} \u{663E}\u{793A} \u{7528}\u{6237}\u{7B7E}\u{540D}`;
+  MONKEY_MENU.name = `\u{1F520} Option No.3 ${MAIN.check_boxes.show_user_signature ? '\u{2705}' : '\u{1F532}'} \u{663E}\u{793A} \u{7528}\u{6237}\u{7B7E}\u{540D}`;
   GM_registerMenuCommand(MONKEY_MENU.name, () => {
     GM_setValue('show_user_signature', !MAIN.check_boxes.show_user_signature);
     document.body.style.transition = 'opacity 1s ease-out';
@@ -2478,20 +2478,6 @@ const MASTER_OF_FORUMS = () => {
 // Main CSS
 GM_addStyle(GM_getResourceText('MainCSS'));
 
-// User badge
-if (GM_getValue('show_user_badge', true) === false) {
-  GM_addStyle(`
-  img[file$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.gif"],
-  img[file$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.svg"],
-  img[src$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.gif"],
-  img[src$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.svg"],
-  img.master-badge,
-  #postlist .master-badge {
-    display: none;
-  }
-  `);
-}
-
 // User avatar
 if (GM_getValue('show_user_avatar', true) === false) {
   GM_addStyle(`
@@ -2515,6 +2501,20 @@ if (GM_getValue('show_user_avatar', true) === false) {
   }
   #content img.ProfilePhoto.ProfilePhotoMedium {
     content: url(//ui-avatars.com/api/?size=40&name);
+  }
+  `);
+}
+
+// User badge
+if (GM_getValue('show_user_badge', true) === false) {
+  GM_addStyle(`
+  img[file$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.gif"],
+  img[file$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.svg"],
+  img[src$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.gif"],
+  img[src$="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.svg"],
+  img.master-badge,
+  #postlist .master-badge {
+    display: none;
   }
   `);
 }
