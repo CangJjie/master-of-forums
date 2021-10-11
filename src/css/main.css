@@ -238,23 +238,22 @@ img.master-badge:hover {
 }
 
 /* Reappear  */
-@keyframes reappear {
-  from {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
+@keyframes flash {
+  from,
+  50%,
   to {
     opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
   }
 }
 
 img.node-reappear,
 img.master-badge.node-reappear {
-  animation: reappear 0.2s 2;
+  animation: flash 0.5s;
 }
 
 /* Notice */
