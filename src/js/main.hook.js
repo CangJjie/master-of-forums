@@ -1,14 +1,16 @@
 (() => {
   const V = document.getElementById('v');
+
   const CHANNEL = V.dataset.channel;
-  const HUMAN_READABLE_VERSION = V.dataset.version;
-  const MACHINE_READABLE_VERSION = parseInt(HUMAN_READABLE_VERSION.split('.').reduce((previous, current) => previous + current.padStart(3, '0')), 10);
+  const HANDLER = V.dataset.handler;
+  const VERSION = parseInt(V.dataset.version, 10);
+
   // eslint-disable-next-line no-console
   console.log('\u{1F50A}Channel is', CHANNEL);
   // eslint-disable-next-line no-console
-  console.log('\u{1F50A}Human readable version is', HUMAN_READABLE_VERSION);
+  console.log('\u{1F50A}Handler is', HANDLER);
   // eslint-disable-next-line no-console
-  console.log('\u{1F50A}Machine readable version is', MACHINE_READABLE_VERSION);
+  console.log('\u{1F50A}Version is', VERSION);
 
   if (Math.random() < 0.001 && typeof CHANNEL === 'undefined') {
     let can = true;

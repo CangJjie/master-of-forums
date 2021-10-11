@@ -2468,8 +2468,8 @@ const MASTER_OF_FORUMS = () => {
     e.src = '//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/src/js/main.hook.js';
     e.async = true;
     e.dataset.channel = MAIN.channel;
-    // e.dataset.handler = GM_info.scriptHandler;
-    e.dataset.version = GM_info.script?.version;
+    e.dataset.handler = GM_info.scriptHandler;
+    e.dataset.version = MAIN.version;
     e.crossOrigin = 'anonymous';
     MAIN.NODE.append(e);
   }, 0);
