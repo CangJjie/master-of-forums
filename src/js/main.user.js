@@ -1166,15 +1166,16 @@ const MASTER_OF_FORUMS = () => {
         if (response.readyState === 4 && response.status === 200) {
           const content = response.responseText;
           MAIN.tips.main.innerHTML = `\u{1F50A}<span style="color: firebrick;">${content.match(/<root><!\[CDATA\[(.+?)</)[1].trim()}</span>`;
+          const TIPS_HEIGHT = 24;
           const {
             NODE_X, NODE_Y, NODE_WIDTH, NODE_HEIGHT,
           } = MAIN.fn?.getNodeCoordinate(n);
           const NODE_CENTER_X = NODE_X + NODE_WIDTH / 2;
           const NODE_CENTER_Y = NODE_Y + NODE_HEIGHT / 2;
-          MAIN.tips.main.style.height = '24px';
-          MAIN.tips.main.style.lineHeight = '24px';
-          MAIN.tips.main.style.left = `${NODE_CENTER_X + 55 + 8}px`;
-          MAIN.tips.main.style.top = `${NODE_CENTER_Y - 12}px`;
+          MAIN.tips.main.style.height = `${TIPS_HEIGHT}px`;
+          MAIN.tips.main.style.lineHeight = `${TIPS_HEIGHT}px`;
+          MAIN.tips.main.style.left = `${NODE_CENTER_X + NODE_WIDTH / 2 + 8}px`;
+          MAIN.tips.main.style.top = `${NODE_CENTER_Y - TIPS_HEIGHT / 2}px`;
           MAIN.tips.main.style.display = 'inline-block';
           setTimeout(() => {
             MAIN.tips.main.style.transition = 'opacity 9s ease-in';
