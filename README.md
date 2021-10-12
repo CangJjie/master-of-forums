@@ -33,7 +33,9 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ❌ | Latest ✔ | Latest ✔
 ### 界面展示
 <details>
   <summary>脚本菜单</summary>
-  <img src="//i.imgur.com/LQ37ehH.png" referrerpolicy="no-referrer">
+  <a href="https://i.imgur.com/LQ37ehH.png" rel="external nofollow noopener" target="_blank">
+    <img src="https://i.imgur.com/LQ37ehH.png" referrerpolicy="no-referrer">
+  </a>
 </details>
 <details>
   <summary>云端点赞</summary>
