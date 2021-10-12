@@ -31,11 +31,5 @@ Get script from GitLab | [![Get script from GitLab](https://img.shields.io/badge
 Latest ✔ | Latest ✔ | Latest ✔ | Latest ❌ | Latest ✔ | Latest ✔
 
 ### 界面展示
-<details>
-<summary>脚本菜单</summary>
-[![](https://i.imgur.com/LQ37ehH.png)](../..)
-</details>
-<details>
-  <summary>云端点赞</summary>
-  即将上线
-</details>
+[![脚本菜单](https://i.imgur.com/LQ37ehH.png)](../..)
+[![云端点赞](https://cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/hsts-pixel.gif)](../..)
