@@ -33,7 +33,7 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ❌ | Latest ✔ | Latest ✔
 ### 界面展示
 <details>
   <summary>脚本菜单</summary>
-  [![](https://i.imgur.com/LQ37ehH.png)](../..)
+  <img src="//i.imgur.com/LQ37ehH.png" referrerpolicy="no-referrer">
 </details>
 <details>
   <summary>云端点赞</summary>
