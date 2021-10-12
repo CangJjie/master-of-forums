@@ -1219,7 +1219,7 @@ const MASTER_OF_FORUMS = () => {
     });
   };
 
-  MAIN.actions.supportPointToPoint = (post) => {
+  MAIN.actions.supportPointToPoint = (post, sleep) => {
     for (let i = 0; i < post.length; i++) {
       MAIN.fn?.print('Point to Point');
       setTimeout(() => {
@@ -1283,20 +1283,14 @@ const MASTER_OF_FORUMS = () => {
             MAIN.actions?.supportPointToPoint(content.post);
           }
         } else {
-          setTimeout(() => {
-            MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #036;">云端顶帖</span><span style="color: #060;">申请失败</span>\u{1F641}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
-          }, 4 * 1000);
+          MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #036;">云端顶帖</span><span style="color: #060;">申请失败</span>\u{1F641}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
         }
       },
       onerror: () => {
-        setTimeout(() => {
-          MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #036;">云端顶帖</span><span style="color: #060;">\u{8BF7}\u{6C42}\u{9519}\u{8BEF}\u{FF01}</span>\u{1F641}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
-        }, 4 * 1000);
+        MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #036;">云端顶帖</span><span style="color: #060;">\u{8BF7}\u{6C42}\u{9519}\u{8BEF}\u{FF01}</span>\u{1F641}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
       },
       ontimeout: () => {
-        setTimeout(() => {
-          MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #036;">云端顶帖</span><span style="color: #060;">\u{8BF7}\u{6C42}\u{8D85}\u{65F6}\u{FF01}</span>\u{1F641}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
-        }, 4 * 1000);
+        MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #036;">云端顶帖</span><span style="color: #060;">\u{8BF7}\u{6C42}\u{8D85}\u{65F6}\u{FF01}</span>\u{1F641}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
       },
     });
   };
