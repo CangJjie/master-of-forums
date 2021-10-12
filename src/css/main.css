@@ -590,6 +590,11 @@ img.master-badge.node-reappear {
   background-color: var(--main-light);
 }
 
+.discussion-list-item-content .content-title {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .discussion-list-item-content .content-title a {
   -webkit-user-drag: none;
 }
