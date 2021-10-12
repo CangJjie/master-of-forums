@@ -237,7 +237,7 @@ img.master-badge:hover {
   opacity: 1;
 }
 
-/* Reappear  */
+/* Flash */
 @keyframes flash {
   from,
   50%,
@@ -249,6 +249,10 @@ img.master-badge:hover {
   75% {
     opacity: 0;
   }
+}
+
+.main-flash {
+  animation: flash 1s;
 }
 
 img.node-reappear,

@@ -1209,10 +1209,10 @@ const MASTER_OF_FORUMS = () => {
             OK();
           } else if (content.includes('\u{672A}\u{5B9A}\u{4E49}\u{64CD}\u{4F5C}')) {
             // 未定义操作
-            MAIN.tips.main.innerHTML += '（\u{1F6AB}）';
+            MAIN.tips.main.innerHTML += '（<span class="main-flash">\u{1F6AB}</span>）';
           } else if (content.includes('\u{60A8}\u{9700}\u{8981}\u{5148}\u{767B}\u{5F55}')) {
             // 您需要先登录才能继续本操作
-            MAIN.tips.main.innerHTML += '（\u{1F636}）';
+            MAIN.tips.main.innerHTML += '（<span class="main-flash">\u{1F636}</span>）';
           }
         }
       },
