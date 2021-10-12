@@ -32,8 +32,8 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ❌ | Latest ✔ | Latest ✔
 
 ### 界面展示
 <details>
-  <summary>脚本菜单</summary>
-  [![](https://i.imgur.com/LQ37ehH.png)](../..)
+<summary>脚本菜单</summary>
+[![](https://i.imgur.com/LQ37ehH.png)](../..)
 </details>
 <details>
   <summary>云端点赞</summary>
