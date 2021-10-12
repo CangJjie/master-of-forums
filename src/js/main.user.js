@@ -1237,7 +1237,7 @@ const MASTER_OF_FORUMS = () => {
             }
           },
         });
-      }, i * 1234 + 1000);
+      }, i * sleep + sleep);
     }
   };
 
@@ -1277,10 +1277,13 @@ const MASTER_OF_FORUMS = () => {
         if (response.readyState === 4 && response.status === 200) {
           const content = JSON.parse(response.responseText);
           if (content.statusCode === 200) {
+            const {
+              post, sleep, message, delay,
+            } = content;
             setTimeout(() => {
-              MAIN.tips.main.innerHTML = content.message;
-            }, content.delay);
-            MAIN.actions?.supportPointToPoint(content.post);
+              MAIN.tips.main.innerHTML = message;
+            }, delay);
+            MAIN.actions?.supportPointToPoint(post, sleep);
           }
         } else {
           MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #036;">云端顶帖</span><span style="color: #060;">申请失败</span>\u{1F641}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
