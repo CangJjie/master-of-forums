@@ -252,7 +252,7 @@ img.master-badge:hover {
 }
 
 .main-flash {
-  animation: flash 1s;
+  animation: flash 1s infinite;
 }
 
 img.node-reappear,
