@@ -390,6 +390,7 @@ const MASTER_OF_FORUMS = () => {
   const HOSTNAME = window.location.hostname;
   const HREF = window.location.href;
   const PATHNAME = window.location.pathname;
+  const SEARCH_PARAMS = (new URL(document.location)).searchParams;
   const REFERRER = document.referrer;
 
   // Monkey Menu
@@ -624,21 +625,13 @@ const MASTER_OF_FORUMS = () => {
             if (typeof n === 'number' && n > 0) {
               MAIN.data.thread = n;
             }
-          } else if (HREF.includes('&tid=')) {
-            const n = parseInt(HREF.match(/&tid=(\d+)/)[1], 10);
-            if (typeof n === 'number' && n > 0) {
-              MAIN.data.thread = n;
-            }
-          } else if (HREF.includes('&ptid=')) {
-            const n = parseInt(HREF.match(/&ptid=(\d+)/)[1], 10);
-            if (typeof n === 'number' && n > 0) {
-              MAIN.data.thread = n;
-            }
           } else if (PATHNAME.includes('/htm_data/')) {
             const n = parseInt(PATHNAME.match(/\/htm_data\/\d+\/(\d+)/)[1], 10);
             if (typeof n === 'number' && n > 0) {
               MAIN.data.thread = n;
             }
+          } else {
+            MAIN.data.thread = parseInt(SEARCH_PARAMS.get('tid'), 10) || parseInt(SEARCH_PARAMS.get('ptid'), 10) || MAIN.data.thread;
           }
         } catch (error) {
           // pass
