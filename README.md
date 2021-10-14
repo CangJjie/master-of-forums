@@ -21,8 +21,8 @@
 ### 安装脚本（任选其一）
 脚本渠道 | 安装地址
 :--- | :---
-Get script from GitHub | [![Get script from GitHub](https://img.shields.io/badge/论坛大师-GitHub-blue?logo=GitHub)](https://github.com/master-of-forums/master-of-forums/raw/main/src/js/main.user.js)
-Get script from GitLab | [![Get script from GitLab](https://img.shields.io/badge/论坛大师-GitLab-blue?logo=GitLab)](https://gitlab.com/master-of-forums/master-of-forums/raw/main/src/js/main.user.js)
+Get script from GitHub | [![Get script from GitHub](https://img.shields.io/badge/论坛大师-点击安装-blue?logo=GitHub)](https://github.com/master-of-forums/master-of-forums/raw/main/src/js/main.user.js)
+Get script from GitLab | [![Get script from GitLab](https://img.shields.io/badge/论坛大师-点击安装-blue?logo=GitLab)](https://gitlab.com/master-of-forums/master-of-forums/raw/main/src/js/main.user.js)
 <!-- Get script from Global CDN | [![Get script from Global CDN](https://img.shields.io/badge/论坛大师-Global%20CDN-blue?logo=jsDelivr)](https://www.jsdelivr.com/) -->
 
 ### 脚本兼容
