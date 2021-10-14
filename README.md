@@ -32,4 +32,4 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ❌ | Latest ✔ | Latest ✔
 
 ### 界面展示
 [![脚本菜单](https://i.imgur.com/LQ37ehH.png)](../..)
-[![云端点赞](https://cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/hsts-pixel.gif)](../..)
+[![云端点赞](https://i.imgur.com/v7HHYwC.png)](../..)
