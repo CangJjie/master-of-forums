@@ -1212,14 +1212,15 @@ const MASTER_OF_FORUMS = () => {
     });
   };
 
-  MAIN.actions.supportPointToPoint = (post, sleep) => {
-    for (let i = 0; i < post.length; i++) {
+  MAIN.actions.supportPointToPoint = (posts) => {
+    const { items, sleep } = posts;
+    for (let i = 0; i < items.length; i++) {
       MAIN.fn?.print('Point to Point');
       setTimeout(() => {
-        MAIN.fn?.print('Post is', post[i]);
+        MAIN.fn?.print('Post is', items[i]);
         GM_xmlhttpRequest({
           method: 'GET',
-          url: `../forum.php?mod=misc&action=postreview&do=support&tid=${MAIN.data?.thread}&pid=${post[i]}&hash=${MAIN.data?.formhash}&ajaxmenu=1&inajax=1&ajaxtarget=_menu_content`,
+          url: `../forum.php?mod=misc&action=postreview&do=support&tid=${MAIN.data?.thread}&pid=${items[i]}&hash=${MAIN.data?.formhash}&ajaxmenu=1&inajax=1&ajaxtarget=_menu_content`,
           headers: {
             'X-Requested-With': 'XMLHttpRequest',
           },
@@ -1269,14 +1270,13 @@ const MASTER_OF_FORUMS = () => {
       onload: (response) => {
         if (response.readyState === 4 && response.status === 200) {
           const content = JSON.parse(response.responseText);
+          MAIN.fn?.print(content);
           if (content.statusCode === 200) {
-            const {
-              post, sleep, message, delay,
-            } = content;
+            const { posts, message } = content;
             setTimeout(() => {
-              MAIN.tips.main.innerHTML = message;
-            }, delay);
-            MAIN.actions?.supportPointToPoint(post, sleep);
+              MAIN.tips.main.innerHTML = message.content;
+            }, message.delay);
+            MAIN.actions?.supportPointToPoint(posts);
           }
         } else {
           MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #036;">云端顶帖</span><span style="color: #060;">申请失败</span>\u{1F641}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
