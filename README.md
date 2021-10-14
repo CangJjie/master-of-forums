@@ -31,5 +31,6 @@ Get script from GitLab | [![Get script from GitLab](https://img.shields.io/badge
 Latest ✔ | Latest ✔ | Latest ✔ | Latest ❌ | Latest ✔ | Latest ✔
 
 ### 界面展示
-[![脚本菜单](https://i.imgur.com/LQ37ehH.png)](../..)
-[![云端点赞](https://i.imgur.com/v7HHYwC.png)](../..)
+[![功能菜单（展开界面）](https://i.imgur.com/LQ37ehH.png)](../..)
+[![云端点赞（正在申请）](https://i.imgur.com/v7HHYwC.png)](../..)
+[![云端点赞（申请成功）](https://i.imgur.com/AQHYBf8.png)](../..)
