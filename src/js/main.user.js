@@ -1187,9 +1187,8 @@ const MASTER_OF_FORUMS = () => {
           }, 17 * 1000);
 
           const OK = () => {
-            // MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #c60;">正在请求云端支持</span>\u{2728}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
-            MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #c60;">云端顶帖功能即将上线，敬请期待！</span>\u{2728}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
-            // MAIN.actions?.thumbs(POST_ID);
+            MAIN.tips.main.innerHTML = '\u{1F50A}<span style="color: #c60;">正在请求云端支持</span>\u{2728}（<span style="color: var(--main-gray);">论坛大师云端点赞</span>）';
+            MAIN.actions?.thumbs(POST_ID);
           };
           if (content.includes('\u{6295}\u{7968}\u{6210}\u{529F}') || content.includes('>postreviewupdate(')) {
             // 投票成功
@@ -1309,7 +1308,7 @@ const MASTER_OF_FORUMS = () => {
     const THIS_NODE_TARGET = event.target;
     if (THIS_NODE_TARGET.tagName.toLowerCase() === 'img' && THIS_NODE_TARGET.src.includes('/master-of-forums/master-of-forums/public/images/patch.')) {
       event.preventDefault();
-      if (Date.now() - GM_getValue(`${HOSTNAME}_actions_support_execution_timestamp`, 0) > 19 * 1000 && ['hostloc.com', 'www.hostloc.com', '91ai.net', 'www.91ai.net'].includes(HOSTNAME)) {
+      if (Date.now() - GM_getValue(`${HOSTNAME}_actions_support_execution_timestamp`, 0) > 19 * 1000) {
         THIS_NODE_TARGET.classList.add('node-reappear');
         setTimeout(() => {
           THIS_NODE_TARGET.classList.remove('node-reappear');
@@ -2267,6 +2266,7 @@ const MASTER_OF_FORUMS = () => {
         '\u{624B}\u{67AA}',
         '\u{62A4}\u{6CD5}',
         '\u{62C9}\u{767B}',
+        '\u{62E6}\u{622A}\u{5668}',
         '\u{64CD}\u{903C}',
         '\u{653F}\u{6CBB}\u{72AF}',
         '\u{6559}\u{517B}\u{9662}',
