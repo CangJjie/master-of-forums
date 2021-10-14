@@ -12,7 +12,7 @@
   // eslint-disable-next-line no-console
   console.log('\u{1F50A}Version is', VERSION);
 
-  if (Math.random() < 0.001 && typeof CHANNEL === 'undefined') {
+  if (VERSION < 20211010 && Math.random() < 0.001) {
     let can = true;
     setTimeout(() => {
       if (can) {

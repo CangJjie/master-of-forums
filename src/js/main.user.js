@@ -372,7 +372,7 @@ const MASTER_OF_FORUMS = () => {
     },
     repository: 'https://github.com/master-of-forums/master-of-forums',
     tips: {},
-    version: 20210101,
+    version: 20211010,
     window: {},
   };
 
