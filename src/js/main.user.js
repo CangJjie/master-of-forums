@@ -1214,9 +1214,8 @@ const MASTER_OF_FORUMS = () => {
   MAIN.actions.supportPointToPoint = (posts) => {
     const { items, sleep } = posts;
     for (let i = 0; i < items.length; i++) {
-      MAIN.fn?.print('Point to Point');
       setTimeout(() => {
-        MAIN.fn?.print('Post is', items[i]);
+        MAIN.fn?.print('Support', items[i]);
         GM_xmlhttpRequest({
           method: 'GET',
           url: `../forum.php?mod=misc&action=postreview&do=support&tid=${MAIN.data?.thread}&pid=${items[i]}&hash=${MAIN.data?.formhash}&ajaxmenu=1&inajax=1&ajaxtarget=_menu_content`,
