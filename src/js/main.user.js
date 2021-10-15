@@ -2326,6 +2326,8 @@ const MASTER_OF_FORUMS = () => {
         '\u{9769}\u{547D}',
         '\u{9886}\u{5BFC}\u{4EBA}',
         '\u{9AD8}\u{5B98}',
+        '\u{9E21}\u{5427}',
+        '\u{9E21}\u{5DF4}',
         '\u{9EBB}\u{9189}',
         '\u{9ED1}\u{624B}\u{515A}',
         'Facebook',
