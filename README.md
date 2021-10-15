@@ -32,4 +32,4 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ❌ | Latest ✔ | Latest ✔
 
 ### 界面展示
 [![功能菜单](https://i.imgur.com/LQ37ehH.png)](../..)
-[![云端点赞](https://i.imgur.com/CyEnTyY.png)](../..)
+[![云端点赞](https://i.imgur.com/GVHTEZi.png)](../..)
