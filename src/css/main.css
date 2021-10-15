@@ -154,7 +154,7 @@ img[src$="default-avatar-middle.webp"] {
 }
 
 .bui .m img:hover {
-  background-color: #fff;
+  background-color: var(--main-white);
 }
 
 /* Beautify */
@@ -326,7 +326,7 @@ img.master-badge.node-reappear {
 
 .master-of-forums .main-fileboard:hover {
   color: var(--main-red);
-  background-color: #fff;
+  background-color: var(--main-white);
   box-shadow: 0 0 0.5rem var(--main-gray);
 }
 
@@ -352,7 +352,7 @@ img.master-badge.node-reappear {
 }
 
 .master-of-forums .main-fileboard div.fileboard-icon:hover {
-  background-color: #fff;
+  background-color: var(--main-white);
   background-image: url(//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/bull.webp);
   box-shadow: 0 0 0.25rem var(--main-gray);
 }
@@ -390,7 +390,7 @@ img.master-badge.node-reappear {
 }
 
 .master-of-forums .main-fileboard .fileboard-close:hover {
-  background-color: #fff;
+  background-color: var(--main-white);
   box-shadow: 0 0 0.25rem var(--main-gray);
 }
 
@@ -411,7 +411,7 @@ img.master-badge.node-reappear {
 }
 
 .master-of-forums .main-fileboard .fileboard-content.active {
-  background-color: #fff;
+  background-color: var(--main-white);
   border: 0.25rem dashed var(--main-green);
 }
 
@@ -591,7 +591,7 @@ img.master-badge.node-reappear {
   position: absolute;
   z-index: 9999;
   content: attr(data-date);
-  background-color: var(--main-light);
+  background-color: var(--main-white);
 }
 
 .discussion-list-item-content .content-title {
