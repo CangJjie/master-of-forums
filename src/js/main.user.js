@@ -343,8 +343,16 @@
 // ==/UserScript==
 
 /**
- * Master of Forums (https://github.com/master-of-forums/master-of-forums)
+ * Master of Forums
+ *
+ * Author: admin
+ * E-Mail: admin@369369.xyz
+ *
+ * GitHub (https://github.com/master-of-forums/master-of-forums)
  * Licensed under MPL (https://github.com/master-of-forums/master-of-forums/blob/main/LICENSE)
+ *
+ * GitLab (https://gitlab.com/master-of-forums/master-of-forums)
+ * Licensed under MPL (https://gitlab.com/master-of-forums/master-of-forums/blob/main/LICENSE)
  */
 
 const MASTER_OF_FORUMS = () => {
