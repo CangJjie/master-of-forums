@@ -10,13 +10,13 @@
 ### 功能简介
 * 论坛大师用户脚本适用于各大论坛网站，可以 **美化页面**、**移除广告** 和 **增强功能**；
 * 若要使用用户脚本，需先安装 *用户脚本管理器*（浏览器扩展程序）；
-* 论坛大师用户脚本支持 [Tampermonkey](https://www.tampermonkey.net/) 和 [Violentmonkey（暴力猴）](https://violentmonkey.github.io/)（用户脚本管理器）。
+* 论坛大师用户脚本支持 [Tampermonkey（篡改猴）](https://www.tampermonkey.net/) 和 [Violentmonkey（暴力猴）](https://violentmonkey.github.io/)（用户脚本管理器）。
 
 ### 安装扩展（任选其一）
 扩展名字 | 安装地址
 :--- | :---
 [Tampermonkey](https://www.tampermonkey.net/) | [![Google Chrome](https://img.shields.io/badge/Google%20Chrome-blue?logo=Google%20Chrome&logoColor=white)](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo) [![Microsoft Edge](https://img.shields.io/badge/Microsoft%20Edge-blue?logo=Microsoft%20Edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd) [![Firefox](https://img.shields.io/badge/Firefox-blue?logo=Firefox%20Browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) [![Safari](https://img.shields.io/badge/Safari-blue?logo=Safari&logoColor=white)](https://apps.apple.com/app/apple-store/id1482490089) [![Opera Next](https://img.shields.io/badge/Opera%20Next-blue?logo=Opera&logoColor=white)](https://addons.opera.com/en/extensions/details/tampermonkey-beta/)
-[Violentmonkey](https://violentmonkey.github.io/)（暴力猴） | [![Google Chrome](https://img.shields.io/badge/Google%20Chrome-blue?logo=Google%20Chrome&logoColor=white)](https://chrome.google.com/webstore/detail/jinjaccalgkegednnccohejagnlnfdag) [![Microsoft Edge](https://img.shields.io/badge/Microsoft%20Edge-blue?logo=Microsoft%20Edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/eeagobfjdenkkddmbclomhiblgggliao) [![Firefox](https://img.shields.io/badge/Firefox-blue?logo=Firefox%20Browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)
+[Violentmonkey](https://violentmonkey.github.io/) | [![Google Chrome](https://img.shields.io/badge/Google%20Chrome-blue?logo=Google%20Chrome&logoColor=white)](https://chrome.google.com/webstore/detail/jinjaccalgkegednnccohejagnlnfdag) [![Microsoft Edge](https://img.shields.io/badge/Microsoft%20Edge-blue?logo=Microsoft%20Edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/eeagobfjdenkkddmbclomhiblgggliao) [![Firefox](https://img.shields.io/badge/Firefox-blue?logo=Firefox%20Browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)
 
 ### 安装脚本（任选其一）
 脚本渠道 | 安装地址
