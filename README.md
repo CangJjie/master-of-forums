@@ -10,7 +10,7 @@
 ### 功能简介
 * 论坛大师用户脚本适用于各大论坛网站，可以 **美化页面**、**移除广告** 和 **增强功能**；
 * 若要使用用户脚本，需先安装 *用户脚本管理器*（浏览器扩展程序）；
-* 论坛大师用户脚本支持 ~~Greasemonkey（油猴）~~、[Tampermonkey（篡改猴）](https://www.tampermonkey.net/) 和 [Violentmonkey（暴力猴）](https://violentmonkey.github.io/)。
+* 论坛大师用户脚本支持 ~~Greasemonkey（油猴）~~、[Tampermonkey（篡改猴）](https://www.tampermonkey.net/)和 [Violentmonkey（暴力猴）](https://violentmonkey.github.io/)。
 
 ### 安装扩展（任选其一）
 扩展名字 | 安装地址
