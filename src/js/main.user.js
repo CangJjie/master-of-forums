@@ -1213,6 +1213,9 @@ const MASTER_OF_FORUMS = () => {
           } else if (content.includes('\u{60A8}\u{9700}\u{8981}\u{5148}\u{767B}\u{5F55}')) {
             // 您需要先登录才能继续本操作
             MAIN.tips.main.innerHTML += '（<span class="main-flash">\u{1F636}</span>）';
+          } else if (content.includes('window.location.href')) {
+            // Other
+            MAIN.tips.main.innerHTML += content.match(/.+'(.+?)', {}/)[1];
           }
         }
       },
@@ -1957,6 +1960,14 @@ const MASTER_OF_FORUMS = () => {
       HEAD_POST_LINKS[0].href = GM_info.script?.homepage;
       HEAD_POST_LINKS[1].innerHTML = GM_info.script?.author;
       HEAD_POST_LINKS[1].href = MAIN.repository;
+    }
+
+    if (MAIN.check_boxes?.show_user_badge) {
+      setTimeout(() => {
+        for (const post of document.getElementsByClassName('t_f')) {
+          post.innerHTML += '<img class="master-badge" src="//cdn.jsdelivr.net/gh/master-of-forums/master-of-forums/public/images/patch.gif" loading="lazy" referrerpolicy="no-referrer" draggable="false" alt="Master of Forums">';
+        }
+      }, 1000);
     }
   };
 
