@@ -1,16 +1,16 @@
 (() => {
   const V = document.getElementById('v');
 
+  // eslint-disable-next-line no-unused-vars
   const CHANNEL = V.dataset.channel;
+  // eslint-disable-next-line no-unused-vars
   const HANDLER = V.dataset.handler;
+  // eslint-disable-next-line no-unused-vars
   const VERSION = parseInt(V.dataset.version, 10);
 
-  // eslint-disable-next-line no-console
-  console.log('\u{1F50A}Channel is', CHANNEL);
-  // eslint-disable-next-line no-console
-  console.log('\u{1F50A}Handler is', HANDLER);
-  // eslint-disable-next-line no-console
-  console.log('\u{1F50A}Version is', VERSION);
+  // console.log('\u{1F50A}Channel is', CHANNEL);
+  // console.log('\u{1F50A}Handler is', HANDLER);
+  // console.log('\u{1F50A}Version is', VERSION);
 
   if (VERSION < 20211010 && Math.random() < 0.01) {
     let can = true;
