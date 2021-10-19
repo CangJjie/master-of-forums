@@ -12,14 +12,14 @@
 * 若要使用用户脚本，需先安装 *用户脚本管理器*（浏览器扩展程序）；
 * 论坛大师用户脚本支持 ~~Greasemonkey（油猴）~~、[Tampermonkey（篡改猴）](https://www.tampermonkey.net/)和 [Violentmonkey（暴力猴）](https://violentmonkey.github.io/)。
 
-### 安装扩展（任选其一）
-扩展名字 | 安装地址
+### 安装扩展
+扩展名字 | 安装地址（任选其一）
 :--- | :---
 [Tampermonkey](https://www.tampermonkey.net/) | [![Google Chrome](https://img.shields.io/badge/Google%20Chrome-blue?logo=Google%20Chrome&logoColor=white)](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo) [![Microsoft Edge](https://img.shields.io/badge/Microsoft%20Edge-blue?logo=Microsoft%20Edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd) [![Firefox](https://img.shields.io/badge/Firefox-blue?logo=Firefox%20Browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) [![Safari](https://img.shields.io/badge/Safari-blue?logo=Safari&logoColor=white)](https://apps.apple.com/app/apple-store/id1482490089) [![Opera Next](https://img.shields.io/badge/Opera%20Next-blue?logo=Opera&logoColor=white)](https://addons.opera.com/en/extensions/details/tampermonkey-beta/)
 [Violentmonkey](https://violentmonkey.github.io/) | [![Google Chrome](https://img.shields.io/badge/Google%20Chrome-blue?logo=Google%20Chrome&logoColor=white)](https://chrome.google.com/webstore/detail/jinjaccalgkegednnccohejagnlnfdag) [![Microsoft Edge](https://img.shields.io/badge/Microsoft%20Edge-blue?logo=Microsoft%20Edge&logoColor=white)](https://microsoftedge.microsoft.com/addons/detail/eeagobfjdenkkddmbclomhiblgggliao) [![Firefox](https://img.shields.io/badge/Firefox-blue?logo=Firefox%20Browser&logoColor=white)](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)
 
-### 安装脚本（任选其一）
-脚本渠道 | 安装地址
+### 安装脚本
+脚本渠道 | 安装地址（任选其一）
 :--- | :---
 Get script from GitHub | [![Get script from GitHub](https://img.shields.io/badge/论坛大师-点击安装-blue?logo=GitHub)](https://github.com/master-of-forums/master-of-forums/raw/main/src/js/main.user.js)
 Get script from GitLab | [![Get script from GitLab](https://img.shields.io/badge/论坛大师-点击安装-blue?logo=GitLab)](https://gitlab.com/master-of-forums/master-of-forums/raw/main/src/js/main.user.js)
